@@ -1,0 +1,14 @@
+* i:1 ~
+** i:1 ~ Così sei davvero venuto da solo, Erdho
+*** ~ Questi erano i patti. -> 2
+*** ~ Non ho certo paura di te, stregone. -> 3
+*** ~ I miei uomini hanno circondato la pagoda. A un mio segnale questo posto diventerà meno silenzioso. (bugia) -> 4
+
+** i:2 ~ Sei un uomo d'onore, allora? O forse soltanto uno stolto, straniero? Saresti sorpreso di quanto spesso queste due cose coincidano.
+*** ~ Anche fra nemici ci può essere correttezza, e ciò non implica stupidità. -> 5
+*** ~ Sono uno stolto, forse, ma ho le palle di essere qua a guardarti, e tutto quello che vedo è un bambino nudo e spaventato, troppo cresciuto per farmi pena -> 6
+*** ~ Basta con questi giochetti! Dov'è la ragazza?!? -> 7
+
+** i:5 ~ Parole prudenti per un uomo nella tua posizione, dopotutto. Ma non fingiamo che tu venga in pace in questo luogo sacro, straniero. Un grande potere protegge noi, servi della pagoda; non immischiarti in ciò che non ti appartiene: probabilmente non conosci nemmeno il nome della dea di cui scateneresti le ire se portassi con te la ragazza
+*** ~ Si chiama Jurel, la mai sazia; impedisce alla luna di cadere sul nostro mondo. -> 8
+
