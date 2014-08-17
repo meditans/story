@@ -1,11 +1,14 @@
 #DIALOGO #INDEX{1}
-#BATTUTA #INDEX{1} #CONTENT{Così sei davvero venuto da solo, erdho}
+#BATTUTA #INDEX{1} #CONTENT{Così sei davvero venuto da solo, Erdho}
 #RISPOSTA #INDEX{1} #TO{2} #CONTENT{Questi erano i patti.}
 #RISPOSTA #INDEX{2} #TO{3} #CONTENT{Non ho certo paura di te, stregone.}
 #RISPOSTA #INDEX{3} #TO{4} #CONTENT{I miei uomini hanno circondato la pagoda. A un mio segnale questo posto diventerà meno silenzioso. (bugia)}
+
 #BATTUTA #INDEX{2} #CONTENT{Sei un uomo d'onore, allora? O forse soltanto uno stolto, straniero? Saresti sorpreso di quanto spesso queste due cose coincidano.}
-#RISPOSTA #INDEX{} #TO{5} #CONTENT{Anche fra nemici ci può essere correttezza, e ciò non implica stupidità.}
-#RISPOSTA #INDEX{} #TO{6} #CONTENT{Sono uno stolto, forse, ma ho le palle di essere qua a guardarti, e tutto quello che vedo è un bambino nudo e spaventato, troppo cresciuto per farmi pena}
-#RISPOSTA #INDEX{} #TO{7} #CONTENT{Basta con questi giochetti! Dov'è la ragazza?!?}
+#RISPOSTA #INDEX{1} #TO{5} #CONTENT{Anche fra nemici ci può essere correttezza, e ciò non implica stupidità.}
+#RISPOSTA #INDEX{2} #TO{6} #CONTENT{Sono uno stolto, forse, ma ho le palle di essere qua a guardarti, e tutto quello che vedo è un bambino nudo e spaventato, troppo cresciuto per farmi pena}
+#RISPOSTA #INDEX{3} #TO{7} #CONTENT{Basta con questi giochetti! Dov'è la ragazza?!?}
+
 #BATTUTA #INDEX{5} #CONTENT{Parole prudenti per un uomo nella tua posizione, dopotutto. Ma non fingiamo che tu venga in pace in questo luogo sacro, straniero. Un grande potere protegge noi, servi della pagoda; non immischiarti in ciò che non ti appartiene: probabilmente non conosci nemmeno il nome della dea di cui scateneresti le ire se portassi con te la ragazza}
 #RISPOSTA #INDEX{1} #TO{8} #CONTENT{Si chiama Jurel, la mai sazia; impedisce alla luna di cadere sul nostro mondo.}
+
