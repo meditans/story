@@ -1,0 +1,38 @@
+* Mi sembra giusto dare una struttura gerarchica e frattale alle modifiche, nel seguente senso:
+** Una entita' (come ad esempio un dialogo, o la descrizione di una scena) e' designata da:
+*** Un numero, che consente di riferirsi a lei tra le entita' del suo stesso livello
+*** Delle sottoentita' contenute li' dentro, che consentono di indirizzare verso altri elementi
+    pensa ad esempio ai link che ci sono tra le risposte ed i nuovi dialoghi
+
+* Cominciamo allora a definire una grammatica. (come sintassi)
+** Facciamo che tutti i comandi per il programma siano composti da # e poi una parola in maiuscolo
+** Vediamo degli esempi
+*** #DIALOGO - indica un'intera sequenza di dialogo, da quando si inizia a parlare a quando si finisce
+*** #BATTUTA - indica l'insieme di una battuta di coloro con i quali stiamo parlando, e una battuta nostra
+*** #RISPOSTA - indica una delle nostre 4 scelte in ogni battuta
+** Lo schema generale e' quindi che un dialogo contiene molte battute, che a loro volta contengono molte risposte.
+** Vediamo un esempio svolto di come si potrebbe scrivere:
+   #DIALOGO #1 #TITOLO{Unico dialogo}
+   #BATTUTA #1 E cosi' sei arrivato, straniero
+   #RISPOSTA #1 #LINK{2} Ebbene, non hai forse occhi?
+   #RISPOSTA #2 #LINK{3} In effetti probabilmente sono arrivato!
+   #BATTUTA #2 In effetti, ho gli occhi
+      ... eccetera
+   #BATTUTA #3 Te l'avevo detto che eri arrivato
+      ... eccetera
+** Il punto e' trovare una sintassi con cui ci venga comodo esprimere quello che vogliamo.
+** Fatti un'idea e poi magari scrivi qui la tua opinione!
+
+* Invece dovremmo anche definire tutto quello che vogliamo esprimere.
+** Qui c'e' una lista
+*** Dialoghi
+*** Battute
+*** Risposte
+*** Descrizione di ambienti
+*** Ricordi
+*** Eventi che avvengono dopo un certo lasso di tempo
+**** Diciamo, per tenere viva l'attesa
+**** Come ad esempio, un colpo di vento, o la descrizione di qualcuno che passa vicino a te
+**** Dobbiamo capire come rendere il timing di questi eventi non oppressivo
+**** Ma d'altro canto non vogliamo che l'utente si chieda cosa deve fare, ogni volta
+*** Descrizione e desamina di oggetti
