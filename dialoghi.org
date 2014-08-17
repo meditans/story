@@ -1,0 +1,6 @@
+* Questo e' un file che contiene i dialoghi come li vuoi tu
+** Sentiti libero di scrivere le informazioni in maniera gerarchica
+** Quando vuoi vedere quello che io sto facendo nella cartella
+*** Scrivi nella konsole "git pull" oppure vieni da me che faccio io
+** Quando vuoi salvare su interternet in modo che io veda le modifiche
+*** Vieni da me ;)
