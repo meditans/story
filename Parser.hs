@@ -4,16 +4,20 @@ module Parser where
 
 import Control.Applicative ((*>), (<*), (<*>), (<$>))
 import qualified Data.ByteString as B
-
+import Data.Monoid
 import Data.ByteString.Char8 (ByteString, pack)
 import Text.Parsec
 import Text.Parsec.ByteString
 
 data Risposta = Risposta
-    { index :: Int
-    , to :: Int
-    , content :: ByteString
+    { rIndex :: Int
+    , rTo :: Int
+    , rContent :: ByteString
     } deriving (Show, Eq)
+
+prettyPrint :: Risposta -> ByteString
+--prettyPrint r = B.append (pack . show $ rIndex r) (rContent r)
+prettyPrint r = (pack . show $ rIndex r) <> ". " <> (rContent r)
 
 risposta :: Parser Risposta
 risposta = do
@@ -42,6 +46,9 @@ data Dialogo = Dialogo
     , dBattute :: [Battuta]
     } deriving (Show, Eq)
 
+selezionaBattuta :: Dialogo -> Int -> Battuta
+selezionaBattuta dia n = head $ filter ((== n) . bIndex) (dBattute dia)
+
 dialogo :: Parser Dialogo
 dialogo = do
   _ <- string "#DIALOGO" <* space
@@ -52,9 +59,7 @@ dialogo = do
 braces :: Parser String
 braces = between (string "{") (string "}") (many $ noneOf "}")
 
-a :: IO ByteString
-a = B.readFile "simpleDialog.txt"
-
-main = do
-  aa <- a
-  print $ parse dialogo "argh" aa
+dialogoProva :: IO Dialogo
+dialogoProva = do
+  dia <- B.readFile "simpleDialog.txt"
+  let Right d = parse dialogo "argh" dia in return d

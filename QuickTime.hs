@@ -1,6 +1,9 @@
 module QuickTime where
 
-import System.Timeout
+import qualified Data.ByteString as S
+import           Data.Monoid
+import           Parser
+import           System.Timeout
 
 data Interaction = Ok | No deriving (Show, Eq)
 
@@ -15,16 +18,14 @@ quickTime str t = do
 timed :: Int -> IO a -> IO (Maybe a)
 timed t act = timeout (t * 1000000) act
 
-dialogues :: [String] -> IO String
+
+
+dialogues :: [Risposta] -> IO Int
 dialogues ss = do
-    mapM_ print $ zipWith (++) numbers ss
+    mapM_ (S.putStrLn . prettyPrint) (ss)
     n <- read `fmap` getLine
     if n >= 1 && n <= length ss
-       then return $ ss !! (n-1)
+       then return $ n-1
        else dialogues ss 
   where numbers = map (\n -> show n ++ ". ") [1..]
 
-main :: IO ()
-main = do
-  quickTime "ciao" 4
-  return ()
