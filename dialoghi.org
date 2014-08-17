@@ -1,6 +1,91 @@
-* Questo e' un file che contiene i dialoghi come li vuoi tu
-** Sentiti libero di scrivere le informazioni in maniera gerarchica
-** Quando vuoi vedere quello che io sto facendo nella cartella
-*** Scrivi nella konsole "git pull" oppure vieni da me che faccio io
-** Quando vuoi salvare su interternet in modo che io veda le modifiche
-*** Vieni da me ;)
+%%% SETTING  %%%
+
+Sei appena entrato nella pagoda e puoi osservarne l'umile sacralità. 
+
+[guarda in alto]
+I raggi della luna piena filtrano prepotenti dalle arcate vuote della cupola, illuminando 
+il grande ambiente circolare in cui ti trovi.
+
+[guarda ai lati]
+Ti accorgi che lungo il perimetro esterno
+ci sono delle rientranze nella pietra, cavità buie nelle quale non riesci a guardare.
+
+[guarda al centro della pagoda] 
+Un'improvvisa folata di vento gonfia il tuo mantello, come la vela di una nave. Mentre lo 
+ricomponi, il tuo occhio si posa al centro della sala, dove su un piccolo piedistallo rialzato 
+scorgi un bacile di pietra, dai cui estremi si erge una scultura della dea Jurel. 
+    
+    [vai al bacile]
+
+I tuoi passi risuonano riecheggiando sulle pietre della pagoda, mentre ti avvicini al bacile.
+"Il rito della luna nuova è un rito crudele, erdho, ma necessario" - ti sovviene mentre sali i gradini
+che portano al bacile. "Solo con il sangue di chi è senza colpa otteniamo che Jurel trattenga la 
+luna dal cadere sulla foresta; è un grande onore per noi offrirci come sue ancelle: veniamo preparate
+ a servirla da quando nasciamo". Sei giunto ormai davanti al bacile; l'acqua nel disco di pietra è 
+quasi perfettamente ferma e rischiarata dal chiarore lunare, interrotta nella sua quiete 
+da piccole gocce d'acqua che cadono dall'alto al centro del bacile, regolarmente.
+
+[guarda in alto] Alzando gli occhi ti accorgi che le gocce fuoriescono dagli occhi di pietra di Jurel e le
+ rigano il volto prima di cadere
+nel bacile. "Ogni plenilunio, la dea piange per la fame" - ricordi con un brivido, rammentando la 
+paura malcelata che aveva accompagnato quelle parole - "E quando il disco di pietra è colmo delle
+sue lacrime e la grande luna vi si specchia tutta, l'acqua deve diventare rossa. L'acqua deve diventare
+senza colpa". 
+
+[guarda l'acqua (si sblocca solo dopo che le precedenti sono state viste tutte)]
+
+Il tuo viso ti guarda riflesso dal bacile: due occhi profondi come la notte, torvi sotto
+ le folte sopracciglia, la barba nerissima, il turbante arancione fermato al centro da un rubino. Plick.
+Quando l'acqua si ricompone, un altro volto è riflesso nel bacile, oltre al tuo. Alzi gli occhi e incroci
+lo sguardo con un uomo calvo, completamente tatuato e seminudo.
+
+%%% DIALOGO %%%
+
+- Così sei davvero venuto da solo, erdho. [1]
+
+     Questi erano i patti. [-> 2]
+ 
+     Non ho certo paura di te, stregone. [-> 3]
+
+     I miei uomini hanno circondato la pagoda. A un mio segnale questo posto diventerà meno silenzioso.
+      {bugia} [-> 4]
+
+- Sei un uomo d'onore, allora? O forse soltanto uno stolto, straniero? Saresti sorpreso di quanto spesso
+   queste due cose coincidano. [2] 
+  
+     Anche fra nemici ci può essere correttezza, e ciò non implica stupidità. [-> 5]
+
+     Sono uno stolto, forse, ma ho le palle di essere qua a guardarti, e tutto quello che vedo è 
+     un bambino nudo e spaventato, troppo cresciuto per farmi pena [-> 6]
+ 
+     Basta con questi giochetti! Dov'è la ragazza?!? [-> 7]
+
+- Parole prudenti per un uomo nella tua posizione, dopotutto. Ma non fingiamo che tu venga in pace
+  in questo luogo sacro, straniero. Un grande potere protegge noi, servi della pagoda; non immischiarti
+  in ciò che non ti appartiene: probabilmente non conosci nemmeno il nome della dea di cui scateneresti le ire
+  se portassi con te la ragazza [5] 
+
+     Si chiama Jurel, la mai sazia; impedisce alla luna di cadere sul nostro mondo. 
+
+    
+
+
+     
+
+     
+
+     
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
