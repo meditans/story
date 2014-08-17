@@ -2,7 +2,6 @@ module QuickTime where
 
 import System.Timeout
 
-
 data Interaction = Ok | No deriving (Show, Eq)
 
 quickTime :: String -> Int -> IO Interaction
@@ -13,12 +12,8 @@ quickTime str t = do
      then return Ok
      else quickTime str t
 
-quickTime' :: String -> Int -> IO (Maybe Interaction)
-quickTime' str t = timeout (t * 1000000) (quickTime str t)
-
 timed :: Int -> IO a -> IO (Maybe a)
 timed t act = timeout (t * 1000000) act
-
 
 dialogues :: [String] -> IO String
 dialogues ss = do
